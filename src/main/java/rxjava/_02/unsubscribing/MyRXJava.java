@@ -1,6 +1,7 @@
-package rxjava._01.intro;
+package rxjava._02.unsubscribing;
 
 import rx.Observable;
+import rx.Subscriber;
 
 public class MyRXJava {
 
@@ -8,6 +9,6 @@ public class MyRXJava {
 		Observable<String> feed = DataGenerator.getFeed();
 		System.out.println("got observable");
 		
-		//feed.subscribe(System.out::println, System.out::println, () -> System.out.println("DONE"));
+		feed.subscribe();
 	}
 }

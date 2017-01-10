@@ -1,4 +1,6 @@
-package rxjava._07.coldversushot;
+package rxjava._02.unsubscribing;
+
+import java.util.UUID;
 
 import rx.Observable;
 import rx.Subscriber;
@@ -10,15 +12,20 @@ public class DataGenerator {
 	}
 
 	private static void processRequest(Subscriber<? super String> subscriber) {
-		int count = 0;
+		System.out.println("processing ...");
+		
 		while(true) {
-			subscriber.onNext(""+count++);
+			subscriber.onNext(createString());
+
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(500);
 			} catch (InterruptedException e) {
 			}
 		}
 		
 	}
 
+	private static String createString() {
+		return UUID.randomUUID().toString();
+	}
 }

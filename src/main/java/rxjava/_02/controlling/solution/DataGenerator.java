@@ -1,4 +1,4 @@
-package rxjava._02.data;
+package rxjava._02.controlling.solution;
 
 import java.util.UUID;
 
@@ -13,21 +13,19 @@ public class DataGenerator {
 
 	private static void processRequest(Subscriber<? super String> subscriber) {
 		System.out.println("processing ...");
-		
-//		int count = 0;
-//		while (count++ < 3) {
 
-		while(true) {
+		int count = 0;
+		while (count++ < 3) {
+
 			subscriber.onNext(createString());
 
 			try {
 				Thread.sleep(500);
-			} catch (InterruptedException e) {
-			}
+			} catch (InterruptedException e) {} 
 		}
-		
-//		subscriber.onCompleted();
-//		subscriber.onNext("next ");
+
+		subscriber.onCompleted();
+		subscriber.onNext("next");
 	}
 
 	private static String createString() {

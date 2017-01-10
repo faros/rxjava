@@ -1,4 +1,4 @@
-package rxjava._05.errorhandling;
+package rxjava._04.errorhandling;
 
 import java.util.UUID;
 
@@ -22,7 +22,6 @@ public class DataGenerator {
 			} catch (InterruptedException e) {
 			}
 		}
-		
 	}
 
 	private static String createString() {

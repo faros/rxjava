@@ -1,4 +1,4 @@
-package rxjava._03.unsubscribing;
+package rxjava._03.async;
 
 import java.util.UUID;
 
@@ -14,7 +14,6 @@ public class DataGenerator {
 	private static void processRequest(Subscriber<? super String> subscriber) {
 		System.out.println("processing ...");
 		
-//		while(!subscriber.isUnsubscribed()) {
 		while(true) {
 			subscriber.onNext(createString());
 

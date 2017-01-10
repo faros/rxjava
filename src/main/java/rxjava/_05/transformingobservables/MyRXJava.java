@@ -1,4 +1,4 @@
-package rxjava._02.data;
+package rxjava._05.transformingobservables;
 
 import rx.Observable;
 
@@ -8,9 +8,7 @@ public class MyRXJava {
 		Observable<String> feed = DataGenerator.getFeed();
 		System.out.println("got observable");
 		
-		feed.subscribe(System.out::println, 
-					   System.out::println, 
-					   () -> System.out.println("DONE"));
+		feed.subscribe(System.out::println, System.out::println,  () -> System.out.println("DONE"));
 	}
-	
+
 }

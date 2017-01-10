@@ -1,4 +1,4 @@
-package rxjava._04.async;
+package rxjava._01.intro.solution;
 
 import java.util.UUID;
 
@@ -16,15 +16,9 @@ public class DataGenerator {
 		
 		while(true) {
 			subscriber.onNext(createString());
-
-			try {
-				Thread.sleep(500);
-			} catch (InterruptedException e) {
-			}
 		}
-		
 	}
-
+	
 	private static String createString() {
 		return UUID.randomUUID().toString();
 	}
