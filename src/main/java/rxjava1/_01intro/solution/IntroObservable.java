@@ -8,7 +8,7 @@ import rx.Observable;
 import rx.functions.Action1;
 
 /*
- * TOODO 1 introduction
+ * TOODO 01 introduction
  * 
  * To use RxJava you create Observables (which emit data items), transform those Observables in various ways 
  * to get the precise data items that interest you (by using Observable operators), and then observe and react 
@@ -18,7 +18,7 @@ import rx.functions.Action1;
 public class IntroObservable {
 
 	/*
-	 * TOODO 2 Creating an Observable from Existing Data Structures
+	 * TOODO 02 Creating an Observable from Existing Data Structures
 	 *
 	 * You use the Observable just( ) and from( ) methods to convert objects,
 	 * lists, or arrays of objects into Observables that emit those objects.
@@ -26,11 +26,11 @@ public class IntroObservable {
 	public static void main(String args[]) {
 		List<String> list = Arrays.asList("a", "b", "c", "d");
 
-		// TOODO 3 : create an observable from the list above
+		// TOODO 03 : create an observable from the list above
 		Observable<String> observable = Observable.from(list);
 
 		/*
-		 * TOODO 4 : subscribe to observer you created, printing out all the
+		 * TOODO 04 : subscribe to observer you created, printing out all the
 		 * items (using method reference : System.out::println)
 		 *
 		 * These converted Observables will synchronously invoke the onNext()
@@ -41,7 +41,7 @@ public class IntroObservable {
 		observable.subscribe(System.out::println);
 
 		/*
-		 * TOODO 5 : If your platform doesn't support Java 8 lambdas, no problem!
+		 * TOODO 05 : If your platform doesn't support Java 8 lambdas, no problem!
 		 * RXJava support java 6+ so you can still use inner classes. Subscribe
 		 * to your observable using an inner class instead of using a method
 		 * reference for printing the elements

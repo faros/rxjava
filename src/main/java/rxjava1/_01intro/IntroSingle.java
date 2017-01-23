@@ -3,7 +3,7 @@ package rxjava1._01intro;
 public class IntroSingle {
 
 	/*
-	 * TODO 6 Single
+	 * TODO 06 Single
 	 * 
 	 * RxJava has developed an Observable variant called "Single"
 	 * A Single is like an Observable, but instead of emitting a series of values it always either emits 1 value or an error notification
@@ -17,8 +17,8 @@ public class IntroSingle {
 	 * (onNext, onError, and onCompleted), you only use two methods to subscribe:
 	 */
 	public static void main (String args[] ) {
-		// TODO 7 create a single, containing just (hint) 1 string element
+		// TODO 07 create a single, containing just (hint) 1 string element
 		
-		// TODO 8 subscribe to the single, printing the element
+		// TODO 08 subscribe to the single, printing the element
 	}
 }
