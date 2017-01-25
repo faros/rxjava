@@ -15,6 +15,7 @@ public class FunctionalSolution {
 		for (String symbol : symbols) {
 			symbolsLowerCase.add(symbol.toLowerCase()); // -> mutability
 		}
+
 		// When someone asks you to take this code and make it concurrent you
 		//probably run to the nearest exit because making imperative code
 		//concurrent is hard

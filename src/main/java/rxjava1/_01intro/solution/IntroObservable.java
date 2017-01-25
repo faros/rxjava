@@ -35,7 +35,7 @@ public class IntroObservable {
 		 *
 		 * These converted Observables will synchronously invoke the onNext()
 		 * method of any subscriber that subscribes to them, for each item to be
-		 * emitted by the Observable, and will then invoke the subscriber’s
+		 * emitted by the Observable, and will then invoke the subscriber's
 		 * onCompleted( ) method.
 		 */
 		observable.subscribe(System.out::println);

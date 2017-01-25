@@ -5,10 +5,10 @@ import rx.Observable;
 /*
  * TODO 50 : When does an Observable begin emitting its sequence of items? It depends on the Observable.
  * 		
- * 		A “hot” Observable may begin emitting items as soon as it is created, and so any observer who later subscribes to that Observable may 
+ * 		A "hot" Observable may begin emitting items as soon as it is created, and so any observer who later subscribes to that Observable may 
  * 		start observing the sequence somewhere in the middle. 
  * 
- * 		A “cold” Observable, on the other hand, waits until an observer subscribes to it before it begins to emit items, 
+ * 		A "cold" Observable, on the other hand, waits until an observer subscribes to it before it begins to emit items, 
  * 		and so such an observer is guaranteed to see the whole sequence from the beginning
  */
 public class ColdOrHotObservable {

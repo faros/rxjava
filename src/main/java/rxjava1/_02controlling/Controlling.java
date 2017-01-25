@@ -9,7 +9,7 @@ public class Controlling {
 	
 	public static void main(String args[]) {
 		/*
-		 * TODO 12: get The observable and subscribe to it, you should see the 10 elements comming through (hint: print them out)
+		 * TODO 12: get The observable and subscribe to it, you should see the 10 elements coming through (hint: print them out)
 		 * Make sure that when when the complete signal is send, you print out "DONE"
 		 */
 
