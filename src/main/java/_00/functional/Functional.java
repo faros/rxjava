@@ -16,8 +16,10 @@ public class Functional {
 			symbolsLowerCase.add(symbol.toLowerCase()); // -> mutability
 		}
 
+		System.out.println(symbolsLowerCase);
+
 		// Functional
-		
+
 
 	}
 }

@@ -29,7 +29,7 @@ public class FunctionalSolution {
 						// (1) function pipeline 
 						//.filter(symbol -> symbol.startsWith("g"))
 						.collect(Collectors.toList())
-						//.findFirst() // (2) lazy evaluation
+						//.findFirst() // (2) lazy evaluation (terminal operation)
 				);
 		/*
 		 * making functional code concurrent is relatively easy
