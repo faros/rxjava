@@ -10,7 +10,7 @@ public class MyObservable {
 
 	public static Observable<String> getFeed() {
 		/*
-		 * TODO 11 : You can implement asynchronous i/o, computational operations, or even "infinite" streams of data 
+		 * TOODO 11 : You can implement asynchronous i/o, computational operations, or even "infinite" streams of data
 		 * by designing your own Observable and implementing it with the create( ) method
 		 * 
 		 * Create and return an Observable using the create method. The Observable should, when subscribed return 10 String elements 

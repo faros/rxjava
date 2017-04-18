@@ -17,7 +17,7 @@ public class Async {
 		/*
 		 * http://www.grahamlea.com/2014/07/rxjava-threading-examples/
 		 * Some people assume that, because RxJava is all about "asynchronous sequences", everything will happen on different threads by default, 
-		 * but that’s not the case
+		 * but that's not the case
 		 */
 		
 		/*
